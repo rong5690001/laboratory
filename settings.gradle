@@ -1,0 +1,4 @@
+include ':notification'
+include ':screenshot'
+include ':app', ':emojicompat'
+rootProject.name='laboratory'

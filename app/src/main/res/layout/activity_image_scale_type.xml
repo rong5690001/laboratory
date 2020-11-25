@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    tools:context=".image.ImageScaleTypeActivity">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:focusable="true" />
+
+    <com.rong.laboratory.widget.MelodyButton
+        android:id="@+id/ivMelodyDrawable"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginStart="50dp"
+        android:paddingStart="7dp"
+        android:paddingEnd="7dp"
+        android:text="魂牵梦萦就看了放大镜路口"
+        android:background="@android:color/holo_red_dark"
+        android:layout_marginLeft="50dp" />
+
+
+</LinearLayout>
