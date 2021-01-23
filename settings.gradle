@@ -1,3 +1,8 @@
+include ':motionlayout'
+include ':kotlintest'
+include ':touchevent'
+include ':handler'
+include ':video'
 include ':notification'
 include ':screenshot'
 include ':app', ':emojicompat'

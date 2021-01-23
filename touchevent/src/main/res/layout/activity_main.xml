@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/contentView"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/prBtnDG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/prBtnD1"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/prBtnD1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="父dispatch默认"/>
+
+        <RadioButton
+            android:id="@+id/prBtnD2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="父dispatch true"/>
+
+        <RadioButton
+            android:id="@+id/prBtnD3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="父dispatch false"/>
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/prBtnIG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/prBtnI1"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/prBtnI1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="父intercept默认"/>
+
+        <RadioButton
+            android:id="@+id/prBtnI2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="父intercept true"/>
+
+        <RadioButton
+            android:id="@+id/prBtnI3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="父interceptfalse"/>
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/prBtnOG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/prBtnO1"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/prBtnO1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="父touch 默认"/>
+
+        <RadioButton
+            android:id="@+id/prBtnO2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="父touch  true"/>
+
+        <RadioButton
+            android:id="@+id/prBtnO3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="父touch false"/>
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/crBtnDG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/crBtnD1"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/crBtnD1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="子dispatch默认"/>
+
+        <RadioButton
+            android:id="@+id/crBtnD2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="子dispatch true"/>
+
+        <RadioButton
+            android:id="@+id/crBtnD3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="子dispatch false"/>
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/crBtnOG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/crBtnO1"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/crBtnO1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="子touch 默认"/>
+
+        <RadioButton
+            android:id="@+id/crBtnO2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="子touch  true"/>
+
+        <RadioButton
+            android:id="@+id/crBtnO3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="子touch false"/>
+    </RadioGroup>
+
+
+    <com.example.touchevent.MyViewGroup
+        android:id="@+id/myViewGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.example.touchevent.MyView
+            android:id="@+id/myView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="点击测试"/>
+
+    </com.example.touchevent.MyViewGroup>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvPrint"
+            android:text="fdsajkfldjsaklfjdklasjfkldsafdjksaljfdkslajfkdlsajfkdlasjfkldjsaklfjdksajfkldsajlfdasfdsajkfldjsaklfjdklasjfkldsafdjksaljfdkslajfkdlsajfkdlasjfkldjsaklfjdksajfkldsajlfdasfdsajkfldjsaklfjdklasjfkldsafdjksaljfdkslajfkdlsajfkdlasjfkldjsaklfjdksajfkldsajlfdasfdsajkfldjsaklfjdklasjfkldsafdjksaljfdkslajfkdlsajfkdlasjfkldjsaklfjdksajfkldsajlfdasfdsajkfldjsaklfjdklasjfkldsafdjksaljfdkslajfkdlsajfkdlasjfkldjsaklfjdksajfkldsajlfdasfdsajkfldjsaklfjdklasjfkldsafdjksaljfdkslajfkdlsajfkdlasjfkldjsaklfjdksajfkldsajlfdasfdsajkfldjsaklfjdklasjfkldsafdjksaljfdkslajfkdlsajfkdlasjfkldjsaklfjdksajfkldsajlfdasfdsajkfldjsaklfjdklasjfkldsafdjksaljfdkslajfkdlsajfkdlasjfkldjsaklfjdksajfkldsajlfdasfdsajkfldjsaklfjdklasjfkldsafdjksaljfdkslajfkdlsajfkdlasjfkldjsaklfjdksajfkldsajlfdasfdsajkfldjsaklfjdklasjfkldsafdjksaljfdkslajfkdlsajfkdlasjfkldjsaklfjdksajfkldsajlfdasfdsajkfldjsaklfjdklasjfkldsafdjksaljfdkslajfkdlsajfkdlasjfkldjsaklfjdksajfkldsajlfdasfdsajkfldjsaklfjdklasjfkldsafdjksaljfdkslajfkdlsajfkdlasjfkldjsaklfjdksajfkldsajlfdasfdsajkfldjsaklfjdklasjfkldsafdjksaljfdkslajfkdlsajfkdlasjfkldjsaklfjdksajfkldsajlfdasfdsajkfldjsaklfjdklasjfkldsafdjksaljfdkslajfkdlsajfkdlasjfkldjsaklfjdksajfkldsajlfdasfdsajkfldjsaklfjdklasjfkldsafdjksaljfdkslajfkdlsajfkdlasjfkldjsaklfjdksajfkldsajlfdasfdsajkfldjsaklfjdklasjfkldsafdjksaljfdkslajfkdlsajfkdlasjfkldjsaklfjdksajfkldsajlfdasfdsajkfldjsaklfjdklasjfkldsafdjksaljfdkslajfkdlsajfkdlasjfkldjsaklfjdksajfkldsajlfdasfdsajkfldjsaklfjdklasjfkldsafdjksaljfdkslajfkdlsajfkdlasjfkldjsaklfjdksajfkldsajlfdasfdsajkfldjsaklfjdklasjfkldsafdjksaljfdkslajfkdlsajfkdlasjfkldjsaklfjdksajfkldsajlfdasfdsajkfldjsaklfjdklasjfkldsafdjksaljfdkslajfkdlsajfkdlasjfkldjsaklfjdksajfkldsajlfdasfdsajkfldjsaklfjdklasjfkldsafdjksaljfdkslajfkdlsajfkdlasjfkldjsaklfjdksajfkldsajlfdasfdsajkfldjsaklfjdklasjfkldsafdjksaljfdkslajfkdlsajfkdlasjfkldjsaklfjdksajfkldsajlfdasfdsajkfldjsaklfjdklasjfkldsafdjksaljfdkslajfkdlsajfkdlasjfkldjsaklfjdksajfkldsajlfdas"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:colorAccent"/>
+
+    </ScrollView>
+</LinearLayout>
