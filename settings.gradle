@@ -1,4 +1,6 @@
 include ':motionlayout'
+include ':dragger2'
+include ':rxjavatrains'
 include ':kotlintest'
 include ':touchevent'
 include ':handler'

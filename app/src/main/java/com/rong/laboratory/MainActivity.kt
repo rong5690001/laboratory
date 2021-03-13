@@ -6,11 +6,13 @@ import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.transition.TransitionManager
 import android.view.View
 import android.view.View.OnClickListener
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.constraintlayout.widget.ConstraintSet
 import com.rong.laboratory.image.ImageScaleTypeActivity
-import com.rong.laboratory.image.MatrixActivity
 
 
 class MainActivity : AppCompatActivity(), OnClickListener {
@@ -30,7 +32,14 @@ class MainActivity : AppCompatActivity(), OnClickListener {
 //                openChrome()
             }
             R.id.btnMatrix -> {
-                start(this, MatrixActivity::class.java)
+//                start(this, MatrixActivity::class.java)
+                ConstraintSet().apply {
+                    clone(findViewById<ConstraintLayout>(R.id.linearLayout))
+                    clear(R.id.btnMatrix, ConstraintSet.BOTTOM)
+                    connect(R.id.btnMatrix, ConstraintSet.TOP, 0, ConstraintSet.BOTTOM)
+                    TransitionManager.beginDelayedTransition(findViewById<ConstraintLayout>(R.id.linearLayout))
+                    applyTo(findViewById(R.id.linearLayout))
+                }
             }
         }
     }
